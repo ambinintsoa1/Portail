@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="348.74" viewBox="0 0 1920 348.74">
+  <g id="footer1" transform="translate(0 -731.26)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(0 757)" fill="#1e847f" stroke="#707070" stroke-width="1">
+      <rect width="1920" height="323" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1919" height="322" fill="none"/>
+    </g>
+    <g id="Polygone_1" data-name="Polygone 1" transform="matrix(-1, -0.017, 0.017, -1, 1034.893, 826.498)" fill="#fff">
+      <path d="M 128.0447540283203 92.5 L 0.9552507996559143 92.5 L 64.5 0.8773383498191833 L 128.0447540283203 92.5 Z" stroke="none"/>
+      <path d="M 64.5 1.75469970703125 L 1.910514831542969 92 L 127.089485168457 92 L 64.5 1.75469970703125 M 64.5 0 L 129 93 L 0 93 L 64.5 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>

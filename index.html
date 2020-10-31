@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="assets/js/scrollreveal.js" ></script>
+
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="navbar">
+        <a href="#home" class="navbar-brand">
+            DSI
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      les applications
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#appli1">Impot</a>
+                      <a class="dropdown-item" href="#appli2">Dépense</a>
+                      <a class="dropdown-item" href="#appli3">Recette</a>
+                      <a class="dropdown-item" href="#appli4">Gestion des personnels</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#appli5">Autres</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#actuality" class="nav-link">Actualite</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lien" class="nav-link">Liens utiles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#login-form" class="navbar-brand">Login </a>
+                </li>
+            </ul>
+        </div>
+        <div class="login-form" id="login-form">
+            <div class="box">
+                <img src="assets/imgs/slider/index.png" class="img2" >
+                <h1>Login</h1>
+                <form #formUser="ngForm" (ngSubmit)="saveUser(formUser.value)">
+                    <input type="text" name=""placeholder="Enter Username">
+                    <input type="password" name=""placeholder="Enter Password">
+                    <input type="submit" name=""value="Login">
+                    <a href="#">Forgot password? </a>
+                </form>  
+            </div>
+        </div>
+    </nav>
+    <div class="header-nav">
+        <div class="header-overlay" id="home">
+            <div class="container">
+                <div class="header-welcome">
+                    <h1 class="animate-left"> Bienvenue</h1>
+                    <h2 class="animate-right"> dans le portail du MEF</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row sn-service">
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-autre">
+                <div class="card">
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-cabinet">
+                <div class="card">
+                    <div class="card-sn-body">
+                        <h1 class="titre-bio">
+                            <img src="assets/imgs/slider/DGI.jpg" class="img-sn" alt="">
+                        </h1>
+                    </div>
+                    <div class="card-sn-footer">
+                        <a href="#appli1" class="">IMPOT
+                            <span class="fa fa-info"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-cabinet">
+                <div class="card">
+                    <div class="card-sn-body">
+                        <h1 class="titre-bio">
+                            <img src="assets/imgs/slider/sigfp.png" class="img-sn" alt="">
+                        </h1>
+                    </div>
+                    <div class="card-sn-footer">
+                        <a href="#appli2" class="" id="plus-info"> DEPENCE
+                            <span class="fa fa-info"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-cabinet">
+                <div class="card">
+                    <div class="card-sn-body">
+                        <h1 class="titre-bio">
+                            <img src="assets/imgs/slider/Augure.png" class="img-sn" alt="">
+                        </h1>
+                    </div>
+                    <div class="card-sn-footer">
+                        <a href="#appli3" class="" id="plus-info">RECETTE
+                            <span class="fa fa-info"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-cabinet">
+                <div class="card">
+                    <div class="card-sn-body">
+                        <h1 class="titre-bio">
+                            <img src="assets/imgs/slider/Personnels.jpg" class="img-sn" alt="">
+                        </h1>
+                    </div>
+                    <div class="card-sn-footer">
+                        <a href="#appli4" class="" id="plus-info">PERSONNELS
+                            <span class="fa fa-info"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 btn-cabinet">
+                <div class="card">
+                    <div class="card-sn-body">
+                        <h1 class="titre-bio">
+                            <img src="assets/imgs/slider/rohi.jpg" class="img-sn" alt="">
+                        </h1>
+                    </div>
+                    <div class="card-sn-footer">
+                        <a href="#appli4" class="" id="plus-info">AUTRES
+                            <span class="fa fa-info"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="row profil-dir animate-top">
+                <div class="col-lg-4 img-profil">
+                    <img src="assets/imgs/slider/Directeur.jpg" alt="">
+                </div>
+                <div class="col-lg-8 letter-profile">
+                    
+                    <h3>Chers collegues</h3>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" delay=3000>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Debut du carousel inner-->
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <p class="tab">
+                                        Nous sommes particulièrement heureux de vous accueillir sur ce portail, entièrement revu et enrichi pour s’inscrire dans une relation d’échange constructif avec vous.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Fin du slide 1-->
+                            <!-- Slide 2-->
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                        <p class="tab">
+                                            Ce portail est le point d’entrée à l’ensemble des contenus, services et applicatifs du Ministère de l’Economie et des Finances.
+                                        </p>
+                                </div>
+                            </div>
+                            <!-- Fin du slide 2-->
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                        <p class="tab">
+                                            A partir de cette plateforme d’accès, plusieurs espaces vont être créés : un espace informationnel de recherche, un espace communautaire de partage et un espace personnalisé de services.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                        <p class="tab">
+                                            Nous saisissons cette opportunité pour vous remercier de votre visite et nous réitérons notre prédisposition à vous accompagner dans nos relations quotidiennes pour mieux servir nos intérêts communs.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Fin du slide 3-->
+                        </div>
+                        <!-- Fin du carousel inner-->
+                        <!-- Next & Prev button-->
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+    
+     <!--Fin du découvrire les menu-->
+    <section class="perfect-room between">
+        <div class="container">
+            <div class="global-headline">
+                <div class="nimate-top">
+                    <h2 class="sub-headline">
+                        Service
+                    </h2>
+                </div>
+                <div class="nimate-bottom">
+                    <h1 class="headline"> D.S.I</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="service" id="service">
+        <div class="container">
+            <div class="service_info">
+                <div class="row">
+                    <div class="col-md-6 service-dsi">
+                        <img src="assets/imgs/slider/Directeur.jpg" class="Img" alt="">
+                        <div class="containt-sercice">
+                            <h2>Monsieur LALA ARSON ZO Ny aina </h2>
+                            <h3><i> Directeur de la direction du système d'information  </i></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 service-dsi">
+                        <div class="service-description">
+                            <div class="global-service">
+                                <h2 class="sub-headline">
+                                    Presentation
+                                </h2>
+                                <h1 class="headline headline-blue">DSI</h1>
+                                <div class="asterisk"><i class="fa fa-asterisk"></i></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita asperiores temporibus ab optio repellat esse accusantium cupiditate enim mollitia ipsum aliquam rerum harum assumenda sint voluptas facere cum, sapiente dolorem!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita asperiores temporibus ab optio repellat esse accusantium cupiditate enim mollitia ipsum aliquam rerum harum assumenda sint voluptas facere cum, sapiente dolorem!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita asperiores temporibus ab optio repellat esse accusantium cupiditate enim mollitia ipsum aliquam rerum harum assumenda sint voluptas facere cum, sapiente dolorem!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row btn-service">
+                    <div class="col-lg-4 btn-biblio">
+                        <div class="card-service">
+                            <div class="card-body">
+                                <h1 class="titre-bio">
+                                    BIOGRAPHIE
+                                </h1>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Plus d'information
+                                    <span class="fa fa-info"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 btn-orga">
+                        <div class="card-service">
+                            <div class="card-body">
+                                <h1 class="titre-bio">
+                                    Organigramme
+                                </h1>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Plus d'information
+                                    <span class="fa fa-info"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 btn-cabinet">
+                        <div class="card-service">
+                            <div class="card-body">
+                                <h1 class="titre-bio">
+                                    Service
+                                </h1>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#arch-actu" class="" id="plus-info">Plus d'information
+                                    <span class="fa fa-info"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-orga" id="service-orga">
+            <div class="container">
+                <div class="orga">
+                    <h1>Organigramme du DSI</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate exercitationem earum, illo id officiis voluptatibus quaerat animi perspiciatis nihil?</p> 
+                </div>
+                <img src="assets/imgs/organigramme/orga.png" class="img-org" alt="organigramme" style="width: 100%; margin-top: 40px;">
+                
+            </div>
+        </div>
+                
+        <div class="archive-actu" id="arch-actu">
+            <div class="container">
+            <div class="ser1">
+                <h1>Service du DSI</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate exercitationem earum, illo id officiis voluptatibus quaerat animi perspiciatis nihil?</p>
+            </div>
+            <div class="arch-bloc">
+                <div class="row">
+                    <div class="col-lg-6 arch-col">
+                        <div class="row archi">
+                            <div class="col-lg-3 archive-img">
+                                <img src="assets/imgs/actu/0.jpg" alt="img 0">
+                            </div>
+                            <div class="col-lg-9 archive-content">
+                                <h3>Nom et prenoms </h3>
+                                <h2>Fonction </h2>
+                                <h4> <a href=""> exemple@your-email.com</a></h4>
+                            </div>
+                        </div>
+                        <div class="row archi">
+                            <div class="col-lg-3 archive-img">
+                                <img src="assets/imgs/actu/1.jpg" alt="Img 1">
+                            </div>
+                            <div class="col-lg-9 archive-content">
+                                <h3>Nom et prenoms </h3>
+                                <h2>Fonction </h2>
+                                <h4> <a href=""> exemple@your-email.com</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 arch-col">
+                        <div class="row archi">
+                            <div class="col-lg-3 archive-img">
+                                <img src="assets/imgs/actu/0.jpg" alt="img 0">
+                            </div>
+                            <div class="col-lg-9 archive-content">
+                                <h3>Nom et prenoms </h3>
+                                <h2>Fonction </h2>
+                                <h4> <a href=""> exemple@your-email.com</a></h4>
+                            </div>
+                        </div>
+                        <div class="row archi">
+                            <div class="col-lg-3 archive-img">
+                                <img src="assets/imgs/actu/1.jpg" alt="Img 1">
+                            </div>
+                            <div class="col-lg-9 archive-content">
+                                <h3>Nom et prenoms </h3>
+                                <h2>Fonction </h2>
+                                <h4> <a href=""> exemple@your-email.com</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class="perfect-room between">
+        <div class="container">
+            <div class="global-headline">
+                <div class="nimate-top">
+                    <h2 class="sub-headline">
+                        Les Applications
+                    </h2>
+                </div>
+                <div class="nimate-bottom">
+                    <h1 class="headline"> D.S.I</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-appli" id="appli">
+        <div class="container" id="appli1">
+            <div class="about-actu">
+                <h1 class="title-actu">Les applications pour les impôts </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.</p>
+            </div>
+            <div class="row-appli">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="appli2">
+            <div class="about-actu">
+                <h1 class="title-actu">Les applications pour les excécutions des dépenses</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.</p>
+            </div>
+            <div class="row-appli">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="appli3">
+            <div class="about-actu">
+                <h1 class="title-actu">Les applications pour les excécutions des recettes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.</p>
+            </div>
+            <div class="row-appli">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="appli4">
+            <div class="about-actu">
+                <h1 class="title-actu">Les applications pour les gestions des personnels</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.</p>
+            </div>
+            <div class="row-appli">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="appli5">
+            <div class="about-actu">
+                <h1 class="title-actu">Les autres applications</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus ut illum iure, esse consectetur? Et hic inventore obcaecati,
+                    nesciunt molestias incidunt, tempora consequuntur quo aspernatur laboriosam possimus illum ut.</p>
+            </div>
+            <div class="row-appli">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="img-appli">
+                                    <img src="assets/imgs/icon/android.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="title-appli">Titre 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <section class="perfect-room between">
+        <div class="container">
+            <div class="global-headline">
+                <div class="nimate-top">
+                    <h2 class="sub-headline">
+                        Les Actualités
+                    </h2>
+                </div>
+                <div class="nimate-bottom">
+                    <h1 class="headline"> D.S.I</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discover-our-actu" id="actuality">
+        <div class="container" id="actus">
+            <div class="actu-title">
+                <h1 class="title">A la une</h1>
+            </div>
+            <div class="actu-body">
+                <div class="row">
+                    <div class="col-lg-7 box-actu">
+                        <img src="assets/imgs/actu/actus5.jpg" class="img1" alt="Actu">
+                         <!-- Debut du carousel inner-->
+                       <!----  <div class="carousel-inner" role="listbox">
+                            <!-- Slide 1 --
+                            <div class="carousel-item active">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <img src="assets/imgs/actu/actus5.jpg" class="img1" alt="Actu">
+                                </div>
+                            </div>
+                            <!-- Fin du slide 1-->
+                            <!-- Slide 2--
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <img src="assets/imgs/actu/actus4.jpg" class="img1" alt="Actu">
+                                </div>
+                            </div>
+                            <!-- Fin du slide 2-->
+                            <!-- Slide 3 --
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <img src="assets/imgs/actu/actus3.jpg" class="img1" alt="Actu">
+                                </div>
+                            </div>
+            
+                            
+                            <!-- Fin du slide 3--
+                        </div>-->
+                        <!-- Fin du carousel inner-->
+                        <div class="containt-actu">
+                            <h3>Titre du block</h3>
+                            <p class="retrait">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, cumque, totam explicabo, vitae iure nostrum autem eius adipisci voluptates optio quia soluta nobis. Dolorum beatae maiores minima aliquam fugiat soluta praesentium 
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-5">
+                        <div class="row block-archive-actu">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                    <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row block-archive-actu">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                    <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row block-archive-actu">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                    <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--<div class="row">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                    <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>-->
+                    </div>
+                   
+                </div>
+                
+            </div>
+            
+            <!--<div class="main-actu">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                  <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contenu1">
+                                  <img src="assets/imgs/actu/15.jpg" class="image" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-actu1">
+                                    <h3>Titre 1</h3>
+                                    <h5>Mercredi 07/10/2020</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, numquam!</p>
+                                    <a href="#" class="btn btn-primary btn-flat">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="actu-info" id="actu-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-group padding-right">
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/3.jpg" target="blank">
+                                    <img src="assets/imgs/actu/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/4.jpg" target="blank">
+                                    <img src="assets/imgs/actu/4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/5.jpg" target="blank">
+                                    <img src="assets/imgs/actu/5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/6.jpg" target="blank">
+                                    <img src="assets/imgs/actu/6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/8.jpg" target="blank">
+                                    <img src="assets/imgs/actu/8.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="inner-img">
+                                <a href="assets/imgs/actu/15.jpg" target="blank">
+                                    <img src="assets/imgs/actu/15.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="actu-description">
+                            <div class="global-headline">
+                                <h2 class="sub-headline">
+                                    Découvrir
+                                </h2>
+                                <h1 class="headline headline-blue">les actualites</h1>
+                                <div class="asterisk"><i class="fa fa-asterisk"></i></div>
+                            </div>
+                            <p class="retrait">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim esse necessitatibus et ipsam rerum, odio, libero possimus praesentium, suscipit autem quod quibusdam totam! Minus aperiam debitis at vitae in reiciendis beatae architecto dicta voluptatem error porro necessitatibus commodi minima possimus ad, sit quos, consequatur aliquid deserunt itaque similique esse assumenda rerum odio? Voluptas eaque iusto dignissimos ipsa facere a laborum velit quas omnis excepturi nam temporibus odio debitis ducimus fugiat illum libero alias saepe nesciunt, aperiam ab quisquam consectetur eos et. Dignissimos corrupti quam fugit maiores, eum iste officia quia deleniti eius, soluta fugiat quae modi nulla voluptatem iusto adipisci quos saepe libero. Consequuntur tempore eveniet sit minima, nesciunt quibusdam corporis id reprehenderit commodi architecto incidunt sunt, cum aut excepturi corrupti saepe enim nemo laborum! Impedit dolorem autem ipsam, nam repellendus animi labore ullam amet laudantium fugiat minima harum sit, provident adipisci consequuntur accusamus sint temporibus quae, delectus voluptatum minus. Natus velit nesciunt ipsa saepe magni corrupti quibusdam ut fugiat amet laboriosam ab, impedit itaque facere ad beatae odit aspernatur non eius, error reprehenderit iste. Incidunt quaerat praesentium, doloremque dignissimos unde quo asperiores nam odit sequi. Temporibus quidem, nobis ipsam provident beatae suscipit. Nobis labore quae incidunt cumque maxime.
+                            </p>
+                            <a href="#actu-actualite" class="btn body-btn" id="voir-actu">Voir tous les actualites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actu-actualite" id="actu-actualite">
+                <div class="actu-main">
+                    <h1>Toutes les actualités</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate exercitationem earum, illo id officiis voluptatibus quaerat animi perspiciatis nihil?</p>    
+                </div>
+                <div class="actu-actu">
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus1.jpg" alt="img 0">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="actu-actu">
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus2.jpg" alt="Img 1">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="actu-actu">
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus3.jpg" alt="img 3">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="actu-actu"> 
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus4.jpg" alt="img 0">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="actu-actu">
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus5.jpg" alt="Img 1">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="actu-actu">
+                    <div class="row">
+                        <div class="col-lg-2 archive-img">
+                            <img src="assets/imgs/actu/actus6.jpg" alt="img 3">
+                        </div>
+                        <div class="col-lg-10 actu-content">
+                            <h4>Titre 1</h4>
+                            <h4>20/10/2018</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem delectus facilis animi aliquam voluptate fugit exercitationem iste alias earum.</p>
+                            <a href="#" class="btn btn-success btn-flat">Plus d'information</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
+     <!--Fin du découvrire les menu-->
+    
+
+   
+    <section class="perfect-room between">
+        <div class="container">
+            <div class="global-headline">
+                <div class="nimate-top">
+                    <h2 class="sub-headline">
+                        Contactez la
+                    </h2>
+                </div>
+                <div class="nimate-bottom">
+                    <h1 class="headline"> D.S.I</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!---------------------liens utiles--------------->
+    <section class="section-lien" id="lien">
+        <div class="container text-center lien-utile">
+            <h2>Liens utiles</h2>
+            <div class="form">
+                <form class="search">
+                    <input type="text" name=""placeholder="recherche" class="form-control form-search">
+                    <a href="#" class="btn btn-default"> <span class="fa fa-search"></span> </a>
+                </form>
+            </div>
+            <div class="row-lien">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-xs-12 use-link">
+                        <a href=""><img src="assets/imgs/actu/actus1.jpg"></a>
+                        <p>consectetur</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        
+            <!--<div class="lien_icons">
+            <a href=""><img src="assets/imgs/slider/facebook-icon.jpg" id="fb"></a>
+            <a href=""><img src="assets/imgs/slider/mail-icon.png" id="mail"></a>
+            <a href=""><img src="assets/imgs/slider/twitter-icon.png" id="twit"></a>
+            <a href=""><img src="assets/imgs/slider/linkdin-icon.jpg" id="link"></a>
+            </div>-->
+                
+            
+        </div>
+    </section>
+ <!----------------------------fin liens utiles------------->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-title">
+                        <h1>Contactez-nous</h1>
+                    </div>
+                    <div class="contact-containt">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad possimus explicabo maiores quasi incidunt sed sequi, id neque! Possimus adipisci saepe doloribus eius blanditiis nisi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Nom">Votre nom et prenoms</label>
+                                <input type="text" name="nom" class="form-control input-lg" placeholder="Votre nom et prenoms">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="Nom">Votre adresse email</label>
+                        <input type="email" name="nom" class="form-control input-lg" placeholder="Votre email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Nom">Votre message</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-flat">Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!---------- Social media section-------------->
+ 
+
+
+<!---- ----------------footer section-------------->
+<section class="section_contact" id="contacts">
+    <div class="social_media">
+    
+        <div class="container text-center">
+        <p>Suivez-Nous sur les réseaux sociaux</p>
+        <div class="social_icons">
+            <a href=""><img src="assets/imgs/slider/facebook-icon.jpg" id="fb"></a>
+            <a href=""><img src="assets/imgs/slider/mail-icon.png" id="mail"></a>
+            <a href=""><img src="assets/imgs/slider/twitter-icon.png" id="twit"></a>
+            <a href=""><img src="assets/imgs/slider/linkdin-icon.jpg" id="link"></a>
+        </div>
+        </div>
+    </div>
+
+ </section>
+ <section class="footer">
+    <div class="container">
+        <div class="row footer-container">
+            <div class="col-lg-3 col-md-6 col-sm-12 footer_box">
+                <a href=""><img src="assets/imgs/slider/logo.png"></a>
+                <p>Copyright @ DSI.</p>
+                <p> All rights reserved</p>
+                <p>.Septembre 2020 </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer_box" id="contact_us">
+                <h1>CONTACT US</h1>
+                <div class="footer-letter">
+                    <p><i class="fa fa-map-marker"></i><span> Lorem ipsum dolor sit</span> </p>
+                    <p><i class="fa fa-phone"></i><span> +261 34 05 514 15</span> </p>
+                    <p><i class="fa fa-envelope-o"></i><span>rgbmanou@gmail.com </span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer_box" id="address">
+                <h1>ADDRESS</h1>
+                <div class="footer-letter">
+                    <p><i class="fa fa-map-marker"></i><span>Lorem ipsum dolor sit</span>  </p>
+                    <p><i class="fa fa-phone"></i><span>+261 48 250 23</span> </p>
+                    <p><i class="fa fa-envelope-o"></i><span>rgbmanou@gmail.com </span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer_box" id="information">
+                <h1>SERVICE</h1>
+                <div class="footer-letter">
+                    <p> > <span>Lorem ipsum dolor sit amet </span></p>
+                    <p> > <span>Lorem ipsum dolor sit amet </span></p>
+                    <p> > <span>Lorem ipsum dolor sit amet </span></p>
+                </div> 
+            </div>
+        </div>
+    </div>
+ </section>
+            <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <a href="index.php" class="navbar-brand">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Accueil</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="#actuality" class="nav-link">Actualites</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          les applications
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#appli">Application 1</a>
+                          <a class="dropdown-item" href="#appli">Application 2</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#appli">Application 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                    <a href="#contact" class="nav-link btn-flat">Login</a>
+                        
+                       <div class="box">
+                            <img src="assets/imgs/slider/index.png"class="img">
+                          <h1>Login</h1>
+                          <form #formUser="ngForm" (ngSubmit)="saveUser(formUser.value)">
+                              <input type="text" name=""placeholder="Enter Username">
+                              <input type="password" name=""placeholder="Enter Password">
+                              <input type="submit" name=""value="Login">
+                              <a href="#">Forgot password? </a>
+
+                          </form>  
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>-->
+                <!-- Fin du slide 1-->
+                <!-- Slide 2-->
+              <!---  <div class="carousel-item">
+                    <img src="assets/imgs/slider/slide.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption text-center">
+                        <h1>Bienvenue dans le Portail</h1>
+                        <h3>Direction du système d'information</h3>
+                        
+                        <a href="#actualites" class="btn btn-outline-light btn-lg">Commencer maintenant</a>
+                    </div>
+                </div>
+                Fin du slide 2
+                Slide 3 
+                <div class="carousel-item">
+                    <img src="assets/imgs/slider/4.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption text-center">
+                        <h1>Bienvenue dans le Portail</h1>
+                        <h3>Direction du système d'information</h3>
+                        
+                      <a href="#actualites" class="btn btn-outline-light btn-lg">Commencer maintenant</a>
+                    </div>
+                </div>
+                
+                 Fin du slide 3
+            </div>
+             Fin du carousel inner
+             Next & Prev button
+            <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+    </div>-->
+    
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-3.4.1.slim.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js" ></script>
+    <script src="assets/js/popper.min.js" ></script>
+  
+    <script src="assets/js/scrollreveal.js" ></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#actu-actualite").hide()
+            $('#voir-actu').click(function(){
+                $("#actu-actualite").show()
+            })
+        })
+        const rv = ScrollReveal({
+            duration: 2000,
+            mobile: true,
+            reset: true
+        })
+        rv.reveal('.animate-top', {
+            origin: 'bottom',
+            duration: 2000,
+            distance: '25rem',
+            delay: 400
+        });
+        rv.reveal('.animate-left', {
+            origin: 'left',
+            duration: 2000,
+            distance: '25rem',
+            delay: 200
+        });
+        rv.reveal('.animate-right', {
+            origin: 'right',
+            duration: 2000,
+            distance: '25rem',
+            delay: 300
+        });
+        rv.reveal('.card-service', {
+            origin: 'bottom',
+            duration: 2000,
+            distance: '25rem',
+            delay: 400
+        });   
+   
+    </script>
+    
+</body>
+</html>
